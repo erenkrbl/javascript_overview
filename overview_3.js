@@ -66,7 +66,7 @@
 //     console.log("your lesson grade FF")
 // }
 
-const lessonScore = parseInt(prompt("Enter your lesson grade ", "100"));
+/*const lessonScore = parseInt(prompt("Enter your lesson grade ", "100"));
 const scoreLimit = parseInt(lessonScore / 10);
 
 console.log("Yüzlük sistemdeki not : " + lessonScore + " sinir " + scoreLimit)
@@ -86,4 +86,17 @@ switch(scoreLimit) {
     case 3: console.log("Lesson score : DD"); break;
     default: console.log("Your lesson score faller than 30")
 }
+*/
 
+// çarpım taplosunu oluşturan bir uygulama yazınız
+
+let writeText = "";
+
+for (i = 1; i <= 10; i++) {
+    for ( j = 1; j <= 10; j++) {
+        writeText = writeText + (i + "x" + j + "=" + (i * j)+ "\t");
+        
+    }
+    console.log(writeText);
+    writeText = "";
+}
