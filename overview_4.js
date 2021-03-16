@@ -1,5 +1,5 @@
 // tahmin edilen sayının bulunması 
-
+/*
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
 console.log("random number : " + randomNumber);
@@ -22,5 +22,15 @@ while (estimated != randomNumber) {
 
 
 }
+*/
 
+// kullanıcı 0'a bastığında girilen sayıları çarpamını veren uygulama 
 
+let enterNumber = parseInt(prompt("You are enter a number"));
+let result = 1;
+
+while ( enterNumber != 0) {
+    result = result * enterNumber;
+    enterNumber = parseInt(prompt("Enter a number"));
+}
+console.log("Multiplication result :" + result);
