@@ -43,27 +43,47 @@
 
 // 100'lük sisstemde verilen notları harfli sistemde gösteren uygulama
 
-const lessonGrade = parseInt(prompt("Enter your lesson grade ", "100"));
+// const lessonGrade = parseInt(prompt("Enter your lesson grade ", "100"));
 
 
-if (lessonGrade >= 90) {
-    console.log("Your lesson grade AA")
-} else if ( lessonGrade >= 80 && lessonGrade < 90) {
-    console.log("your lesson grade BA")
-} else if ( lessonGrade >= 70 && lessonGrade < 80) {
-    console.log("your lesson grade BB")
-} else if ( lessonGrade >= 60 && lessonGrade < 70) {
-    console.log("your lesson grade CB")
-} else if ( lessonGrade >= 50 && lessonGrade < 60) {
-    console.log("your lesson grade CC")
-} else if ( lessonGrade >= 40 && lessonGrade < 50) {
-    console.log("your lesson grade DC")
-} else if ( lessonGrade >= 30 && lessonGrade < 40) {
-    console.log("your lesson grade DD")
-} else if ( lessonGrade >= 20 && lessonGrade < 30) {
-    console.log("your lesson grade FD")
-} else if (lessonGrade < 20) {
-    console.log("your lesson grade FF")
+// if (lessonGrade >= 90) {
+//     console.log("Your lesson grade AA")
+// } else if ( lessonGrade >= 80 && lessonGrade < 90) {
+//     console.log("your lesson grade BA")
+// } else if ( lessonGrade >= 70 && lessonGrade < 80) {
+//     console.log("your lesson grade BB")
+// } else if ( lessonGrade >= 60 && lessonGrade < 70) {
+//     console.log("your lesson grade CB")
+// } else if ( lessonGrade >= 50 && lessonGrade < 60) {
+//     console.log("your lesson grade CC")
+// } else if ( lessonGrade >= 40 && lessonGrade < 50) {
+//     console.log("your lesson grade DC")
+// } else if ( lessonGrade >= 30 && lessonGrade < 40) {
+//     console.log("your lesson grade DD")
+// } else if ( lessonGrade >= 20 && lessonGrade < 30) {
+//     console.log("your lesson grade FD")
+// } else if (lessonGrade < 20) {
+//     console.log("your lesson grade FF")
+// }
+
+const lessonScore = parseInt(prompt("Enter your lesson grade ", "100"));
+const scoreLimit = parseInt(lessonScore / 10);
+
+console.log("Yüzlük sistemdeki not : " + lessonScore + " sinir " + scoreLimit)
+
+if (lessonScore == 100) {
+    scoreLimit = 10;
 }
 
+switch(scoreLimit) {
+    //case 10: console.log("Lesson score : AA"); break;
+    case 9: console.log("Lesson score : AA"); break;
+    case 8: console.log("Lesson score : BA"); break;
+    case 7: console.log("Lesson score : BB"); break;
+    case 6: console.log("Lesson score : CB"); break;
+    case 5: console.log("Lesson score : CC"); break;
+    case 4: console.log("Lesson score : DC"); break;
+    case 3: console.log("Lesson score : DD"); break;
+    default: console.log("Your lesson score faller than 30")
+}
 
