@@ -24,24 +24,32 @@
 // } while(count1 <5);
 
 // 1'den 100'e kadar olan sayıların toplamı
-let total = 0;
-for(i = 1; i < 100; i++) {
-    total += i;
-    //total = total + i;
+// let total = 0;
+// for(i = 1; i < 100; i++) {
+//     total += i;
+//     //total = total + i;
+// }
+// console.log("1'den 100'e kadar olan sayıların toplamı : " + total)
+
+
+// let writeText = "";
+
+// for (i=1; i <= 10; i++){
+//     if(i != 10) {
+//         writeText = writeText + i + ", ";    
+//     } else {
+//         writeText = writeText + i;
+//     }
+// }
+// console.log(writeText)
+
+// girilen sayının faktoriyrlini bulma
+
+let number = parseInt(prompt("Enter a number : ", "10"));
+let factorial = 1;
+for(i = 1; i <= number; i++) {
+    factorial = factorial * i;
 }
-console.log("1'den 100'e kadar olan sayıların toplammı : " + total)
-
-
-let writeText = "";
-
-for (i=1; i <= 10; i++){
-    if(i != 10) {
-        writeText = writeText + i + ", ";    
-    } else {
-        writeText = writeText + i;
-    }
-}
-console.log(writeText)
-
+console.log(`${number} number's of the  factorial ${factorial}`)
 
 
