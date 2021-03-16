@@ -32,4 +32,16 @@ for(i = 1; i < 100; i++) {
 console.log("1'den 100'e kadar olan sayıların toplammı : " + total)
 
 
+let writeText = "";
+
+for (i=1; i <= 10; i++){
+    if(i != 10) {
+        writeText = writeText + i + ", ";    
+    } else {
+        writeText = writeText + i;
+    }
+}
+console.log(writeText)
+
+
 
