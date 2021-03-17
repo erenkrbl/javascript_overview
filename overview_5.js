@@ -1,6 +1,7 @@
 // Girilen integer sayıya kadar olan asal sayıları bulan uygulama
 
 let enterNumber = parseInt(prompt("You are enter a number", "10"));
+let displayText = "";
 
 for (i = 2; i <= enterNumber; i++) {
 
@@ -12,6 +13,7 @@ for (i = 2; i <= enterNumber; i++) {
             break;
         }
     } if ( primireNumber == true) {
-        console.log(i);
+        displayText = displayText + i + " ";
     }
 }
+console.log(displayText);
